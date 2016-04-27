@@ -41,8 +41,8 @@ public class PlayerMovement : MonoBehaviour
 			} else if (vertical > 0f) {
 				this.animator.SetBool ("Up", true);
 				this.animator.SetBool ("Down", false);
-				//this.animator.SetBool ("Right", false);
-				//this.animator.SetBool ("Left", false);
+				this.animator.SetBool ("Right", false);
+				this.animator.SetBool ("Left", false);
 			} else if (vertical < 0f) {
 				this.animator.SetBool ("Up", false);
 				this.animator.SetBool ("Down", true);
