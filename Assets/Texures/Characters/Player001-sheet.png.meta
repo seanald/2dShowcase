@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b4907cf5c4c5fa247b3f48377e59d259
-timeCreated: 1461705087
+timeCreated: 1461871448
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,6 +20,7 @@ TextureImporter:
     21300026: Player001-sheet_13
     21300028: Player001-sheet_14
     21300030: Player001-sheet_15
+    21300032: Player001-sheet_16
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,7 +61,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -69,7 +70,7 @@ TextureImporter:
     - name: Player001-sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 48
         width: 16
         height: 16
@@ -80,7 +81,7 @@ TextureImporter:
     - name: Player001-sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 19
         y: 48
         width: 16
         height: 16
@@ -91,7 +92,7 @@ TextureImporter:
     - name: Player001-sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 37
         y: 48
         width: 16
         height: 16
@@ -102,7 +103,7 @@ TextureImporter:
     - name: Player001-sheet_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 55
         y: 48
         width: 16
         height: 16
@@ -113,8 +114,8 @@ TextureImporter:
     - name: Player001-sheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 73
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -124,8 +125,8 @@ TextureImporter:
     - name: Player001-sheet_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 91
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -135,8 +136,8 @@ TextureImporter:
     - name: Player001-sheet_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 109
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -146,8 +147,8 @@ TextureImporter:
     - name: Player001-sheet_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 1
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -157,8 +158,8 @@ TextureImporter:
     - name: Player001-sheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 19
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -168,8 +169,8 @@ TextureImporter:
     - name: Player001-sheet_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 37
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -179,8 +180,8 @@ TextureImporter:
     - name: Player001-sheet_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 55
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -190,8 +191,8 @@ TextureImporter:
     - name: Player001-sheet_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 73
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -201,8 +202,8 @@ TextureImporter:
     - name: Player001-sheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 91
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -212,8 +213,8 @@ TextureImporter:
     - name: Player001-sheet_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 109
+        y: 30
         width: 16
         height: 16
       alignment: 0
@@ -223,8 +224,8 @@ TextureImporter:
     - name: Player001-sheet_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 1
+        y: 12
         width: 16
         height: 16
       alignment: 0
@@ -234,8 +235,8 @@ TextureImporter:
     - name: Player001-sheet_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 19
+        y: 12
         width: 16
         height: 16
       alignment: 0
