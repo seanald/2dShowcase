@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shadow : MonoBehaviour {
+public class Switch : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

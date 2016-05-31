@@ -71,4 +71,10 @@ public class PlayerMovement : MonoBehaviour
 	{
 		this.speed = this.baseSpeed * this.runMultiplier;
 	}
+
+	public Animator Animator {
+		get {
+			return animator;
+		}
+	}
 }

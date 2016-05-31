@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: be87cb96b7cf3154897f45c9c292fa62
-timeCreated: 1464104617
+guid: e414581eb285b4d499ba1bb90247c22c
+timeCreated: 1464032980
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: RockWall001_0
-    21300002: RockWall001_1
-    21300004: RockWall001_2
-    21300006: RockWall001_3
+    21300000: Ladder_0
+    21300002: Ladder_1
+    21300004: Ladder_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,7 +53,18 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: RockWall001_0
+    - name: Ladder_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ladder_1
       rect:
         serializedVersion: 2
         x: 0
@@ -62,21 +72,10 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: RockWall001_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RockWall001_2
+    - name: Ladder_2
       rect:
         serializedVersion: 2
         x: 0
@@ -84,18 +83,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: RockWall001_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []
