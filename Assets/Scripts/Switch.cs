@@ -1,15 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Switch : MonoBehaviour {
+public class Switch : MonoBehaviour
+{
+	private bool switchOn = false;
 
-	// Use this for initialization
-	void Start () {
-	
+	public Switchable[] switchTargets;
+
+	private void ActivateSwitches ()
+	{
+		foreach (Switchable switchable in switchTargets) {
+			switchable.TurnOn ();
+		}
+		this.switchOn = true;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	private void DeactivateSwitches ()
+	{
+		foreach (Switchable switchable in switchTargets) {
+			switchable.TurnOff ();
+		}
+		this.switchOn = false;
+	}
+
+	void OnTriggerEnter2D (Collider2D collider)
+	{
+		if (this.switchOn) {
+			this.DeactivateSwitches ();
+		} else {
+			this.ActivateSwitches ();
+		}
 	}
 }
