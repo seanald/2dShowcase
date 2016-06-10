@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
 	private Animator animator;
+	private Rigidbody2D rigidbody;
 	private float speed = 1.0f;
 
 	public float runMultiplier;
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	void Start ()
 	{
 		this.animator = this.GetComponent<Animator> ();
+		this.rigidbody = this.GetComponent<Rigidbody2D> ();
 		this.speed = this.baseSpeed;
 	}
 
@@ -25,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
 	void ManageMovement (float horizontal, float vertical)
 	{
-		Rigidbody2D rigidbody = GetComponent<Rigidbody2D> ();
-
 		if (horizontal != 0f || vertical != 0f) {
 			if (horizontal > 0f) {
 				this.animator.SetBool ("Up", false);
@@ -55,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		Vector2 movement = new Vector2 (horizontal, vertical);
-		this.transform.Translate (movement * speed);
+		this.rigidbody.velocity = (movement * speed);
+		this.transform.Translate(movement * speed);
 	}
 
 	private void CalculateBaseSpeed()

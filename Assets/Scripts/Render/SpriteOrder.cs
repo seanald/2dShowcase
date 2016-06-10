@@ -5,13 +5,17 @@ public class SpriteOrder : MonoBehaviour {
 
 	private float xPosition;
 	private float yPosition;
+	private SpriteRenderer spriteRenderer;
 
+	void Awake()
+	{
+		this.spriteRenderer = GetComponent<SpriteRenderer> ();
+	}
 	void LateUpdate()
 	{
-		this.xPosition = transform.position.x;
-		this.yPosition = transform.position.y;
-
-		transform.position = new Vector3 (this.xPosition, this.yPosition, this.yPosition);
+		if (this.spriteRenderer != null) {
+			this.spriteRenderer.sortingOrder = Mathf.RoundToInt (transform.position.y * 100f) * -1;
+		}
 	}
 
 }
