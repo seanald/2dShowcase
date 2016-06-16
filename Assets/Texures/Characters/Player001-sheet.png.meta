@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b4907cf5c4c5fa247b3f48377e59d259
-timeCreated: 1461871448
+timeCreated: 1466004235
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -71,176 +71,176 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_1
       rect:
         serializedVersion: 2
         x: 19
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_2
       rect:
         serializedVersion: 2
         x: 37
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_3
       rect:
         serializedVersion: 2
         x: 55
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_4
       rect:
         serializedVersion: 2
         x: 73
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_5
       rect:
         serializedVersion: 2
         x: 91
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_6
       rect:
         serializedVersion: 2
         x: 109
-        y: 48
+        y: 49
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_7
       rect:
         serializedVersion: 2
         x: 1
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_8
       rect:
         serializedVersion: 2
         x: 19
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_9
       rect:
         serializedVersion: 2
         x: 37
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_10
       rect:
         serializedVersion: 2
         x: 55
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_11
       rect:
         serializedVersion: 2
         x: 73
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_12
       rect:
         serializedVersion: 2
         x: 91
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_13
       rect:
         serializedVersion: 2
         x: 109
-        y: 30
+        y: 31
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_14
       rect:
         serializedVersion: 2
         x: 1
-        y: 12
+        y: 13
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Player001-sheet_15
       rect:
         serializedVersion: 2
         x: 19
-        y: 12
+        y: 13
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []

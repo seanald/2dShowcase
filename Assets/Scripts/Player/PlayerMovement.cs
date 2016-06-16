@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
 		Vector2 movement = new Vector2 (horizontal, vertical);
 		this.rigidbody.velocity = (movement * speed);
-		//this.transform.Translate(movement * speed);
+		//this.transform.Translate (movement * speed);
 	}
 
 	private void CalculateBaseSpeed()

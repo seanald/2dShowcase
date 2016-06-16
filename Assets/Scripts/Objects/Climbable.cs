@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Climbable : MonoBehaviour
 {
+	public Trigger2DTest LadderGrabTest { get; private set; }
+
 	void Awake ()
 	{
 		RaycastHit2D[] hits = Physics2D.RaycastAll (this.transform.position, Vector2.zero);
@@ -19,8 +21,7 @@ public class Climbable : MonoBehaviour
 	void OnTriggerStay2D (Collider2D collider)
 	{
 		if (collider.tag.Equals ("Player")) {
-			//Keep player in center of climbable object
-			collider.transform.position = new Vector3 (this.transform.position.x, collider.transform.position.y);
+			collider.isTrigger = true;
 		}
 	}
 }
