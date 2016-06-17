@@ -36,12 +36,8 @@ public class CustomLadderImport : Tiled2Unity.ICustomTiledImporter
 		// For each ladder path in a ladder polygon collider
 		// add a top, spine, and bottom edge collider
 		foreach (var poly in ladderPolygons) {
-			GameObject ladderTops = new GameObject ("LadderTop-EdgeColliders");
 			GameObject ladderSpines = new GameObject ("LadderSpine-EdgeColliders");
-			GameObject ladderBottoms = new GameObject ("LadderBottom-EdgeColliders");
-			ladderTops.layer = LayerMask.NameToLayer ("Ladder");
 			ladderSpines.layer = LayerMask.NameToLayer ("Ladder");
-			ladderBottoms.layer = LayerMask.NameToLayer ("Ladder");
 
 			// Create edge colliders for the ladder tops
 			// We assume that every polygon path represents a ladder
@@ -55,14 +51,6 @@ public class CustomLadderImport : Tiled2Unity.ICustomTiledImporter
 				float xcen = xmin + (xmax - xmin) * 0.5f;
 
 				Debug.Log (xmin + xmax);
-				// Add our edge collider points for the ladder top
-				EdgeCollider2D topEdgeCollider2d =
-					ladderTops.AddComponent<EdgeCollider2D> ();
-				topEdgeCollider2d.points = new Vector2[] {
-					new Vector2 (xmin, ymax),
-					new Vector2 (xmax, ymax),
-				};
-
 				// Add our edge collider points for the ladder spine
 				EdgeCollider2D spineEdgeCollider2d =
 					ladderSpines.AddComponent<EdgeCollider2D> ();
@@ -71,19 +59,10 @@ public class CustomLadderImport : Tiled2Unity.ICustomTiledImporter
 					new Vector2 (xcen, ymax),
 				};
 
-				// Add our edge collider points for the ladder bottom
-				EdgeCollider2D bottomEdgeCollider2d =
-					ladderBottoms.AddComponent<EdgeCollider2D> ();
-				bottomEdgeCollider2d.points = new Vector2[] {
-					new Vector2 (xmin, ymin),
-					new Vector2 (xmax, ymin),
-				};
 			}
 
 			// Parent the ladder components to our ladder object
-			ladderTops.transform.parent = poly.gameObject.transform;
 			ladderSpines.transform.parent = poly.gameObject.transform;
-			ladderBottoms.transform.parent = poly.gameObject.transform;
 		}
 	}
 

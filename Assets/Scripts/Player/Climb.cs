@@ -30,7 +30,7 @@ public class Climb : MonoBehaviour
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.transform != null && hit.transform.gameObject != null && hit.transform.gameObject.layer == LayerMask.NameToLayer ("Ladder")) {
 				this.climbing = true;
-				break;
+				return;
 			} else {
 				this.climbing = false;
 			}
@@ -40,7 +40,7 @@ public class Climb : MonoBehaviour
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.transform != null && hit.transform.gameObject != null && hit.transform.gameObject.layer == LayerMask.NameToLayer ("Ladder")) {
 				this.climbing = true;
-				break;
+				return;
 			} else {
 				this.climbing = false;
 			}
