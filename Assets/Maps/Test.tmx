@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="16" tileheight="16" nextobjectid="10">
  <tileset firstgid="1" name="Grass1" tilewidth="16" tileheight="16" tilecount="16" columns="4">
   <image source="../Texures/Ground/Grass001.png" width="64" height="64"/>
@@ -29,7 +30,7 @@
   <image source="../Texures/Ground/Grass002.png" width="64" height="64"/>
  </tileset>
  <tileset firstgid="33" name="Wall1" tilewidth="16" tileheight="16" tilecount="4" columns="2">
-  <image source="../Texures/Ground/RockWall001.png" width="32" height="32"/>
+  <image source="../Texures/Ground/RockWall001.png" trans="ff00ff" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index"/>
   </tile>
