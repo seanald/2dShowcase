@@ -3,11 +3,16 @@ using System.Collections;
 
 public class Magnet : MonoBehaviour
 {
+	private PlayerMovement playerMovement;
+
+	void Start()
+	{
+		this.playerMovement = this.GetComponent<PlayerMovement> ();
+	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			this.UseMagnetAttract ();
 		}
@@ -28,14 +33,14 @@ public class Magnet : MonoBehaviour
 
 		this.GetComponent<SpriteRenderer> ().color = color;
 
-		RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll (this.transform.position, Vector2.right, 100, Physics2D.AllLayers);
+		RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll (this.transform.position, this.playerMovement.PlayerDirection, 100, Physics2D.AllLayers);
 
 		foreach (RaycastHit2D hit in raycastHit2D) {
 			if (hit.transform != null) {
 				
 				if (hit.transform.tag.Equals ("Magnet")) {
 					Debug.Log (hit.transform.name);
-					hit.transform.GetComponent<Rigidbody2D> ().AddForce (Vector2.left * 2000);
+					hit.transform.GetComponent<Rigidbody2D> ().AddForce (this.playerMovement.PlayerDirection * -2000);
 				}
 			}
 		}
@@ -48,14 +53,14 @@ public class Magnet : MonoBehaviour
 
 		this.GetComponent<SpriteRenderer> ().color = color;
 
-		RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll (this.transform.position, Vector2.right, 100, Physics2D.AllLayers);
+		RaycastHit2D[] raycastHit2D = Physics2D.RaycastAll (this.transform.position, this.playerMovement.PlayerDirection, 100, Physics2D.AllLayers);
 
 		foreach (RaycastHit2D hit in raycastHit2D) {
 			if (hit.transform != null) {
 
 				if (hit.transform.tag.Equals ("Magnet")) {
 					Debug.Log (hit.transform.name);
-					hit.transform.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * 2000);
+					hit.transform.GetComponent<Rigidbody2D> ().AddForce (this.playerMovement.PlayerDirection * 2000);
 				}
 			}
 		}
