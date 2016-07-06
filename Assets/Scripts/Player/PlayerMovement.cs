@@ -106,4 +106,13 @@ public class PlayerMovement : MonoBehaviour
 			lockDirection = value;
 		}
 	}
+
+	public Rigidbody2D Rigidbody {
+		get {
+			return rigidbody;
+		}
+		set {
+			rigidbody = value;
+		}
+	}
 }

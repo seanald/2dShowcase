@@ -40,7 +40,15 @@ public class Magnet : MonoBehaviour
 				
 				if (hit.transform.tag.Equals ("Magnet")) {
 					Debug.Log (hit.transform.name);
-					hit.transform.GetComponent<Rigidbody2D> ().AddForce (this.playerMovement.PlayerDirection * -2000);
+					Rigidbody2D rigid2d = hit.transform.GetComponent<Rigidbody2D> ();
+					if (rigid2d.isKinematic)
+					{
+						this.playerMovement.Rigidbody.AddForce (this.playerMovement.PlayerDirection * 2000);
+					}
+					else
+					{
+						rigid2d.AddForce (this.playerMovement.PlayerDirection * -2000);
+					}
 				}
 			}
 		}
@@ -60,7 +68,15 @@ public class Magnet : MonoBehaviour
 
 				if (hit.transform.tag.Equals ("Magnet")) {
 					Debug.Log (hit.transform.name);
-					hit.transform.GetComponent<Rigidbody2D> ().AddForce (this.playerMovement.PlayerDirection * 2000);
+					Rigidbody2D rigid2d = hit.transform.GetComponent<Rigidbody2D> ();
+					if (rigid2d.isKinematic)
+					{
+						this.playerMovement.Rigidbody.AddForce (this.playerMovement.PlayerDirection * -2000);
+					}
+					else
+					{
+						rigid2d.AddForce (this.playerMovement.PlayerDirection * 2000);
+					}
 				}
 			}
 		}
